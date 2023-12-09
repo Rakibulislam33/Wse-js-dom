@@ -9,3 +9,13 @@ Link an external JavaScript file (script.js) to your HTML file.
 Open the HTML file in a browser and open the browser's developer tools (usually by right-clicking on the page and selecting "Inspect" or "Inspect Element").
 
 resource: https://developer.mozilla.org/en-US/docs/Web/JavaScript
+
+Class-2
+Assignment Title: Explore Basic Dom and make a project.
+
+project should be:
+
+*use basic dom Manipulation like getelementby....whatever you can and i have shown 
+*use style with dom
+*create element and assign to existing class or id 
+
