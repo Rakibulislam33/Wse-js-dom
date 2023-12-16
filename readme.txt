@@ -19,3 +19,6 @@ project should be:
 *use style with dom
 *create element and assign to existing class or id 
 
+
+Class-3
+Assignment Title: Explore Basic Bom and make a project with the Bom Collection.
