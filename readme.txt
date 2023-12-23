@@ -22,3 +22,7 @@ project should be:
 
 Class-3
 Assignment Title: Explore Basic Bom and make a project with the Bom Collection.
+
+Class-4
+Javascript event 
+Assignment Title: Explore Basic Javascript Event and make a practice project with it.
