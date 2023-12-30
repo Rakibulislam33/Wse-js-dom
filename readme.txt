@@ -13,11 +13,11 @@ resource: https://developer.mozilla.org/en-US/docs/Web/JavaScript
 Class-2
 Assignment Title: Explore Basic Dom and make a project.
 
-project should be:
+the project should be:
 
-*use basic dom Manipulation like getelementby....whatever you can and i have shown 
+*use basic dom Manipulation like get element by....whatever you can and i have shown 
 *use style with dom
-*create element and assign to existing class or id 
+*create an element and assign it to an existing class or id 
 
 
 Class-3
@@ -26,3 +26,8 @@ Assignment Title: Explore Basic Bom and make a project with the Bom Collection.
 Class-4
 Javascript event 
 Assignment Title: Explore Basic Javascript Event and make a practice project with it.
+
+
+Class-5
+Javascript event 
+Assignment Title: practice what I have shown you in the class.
