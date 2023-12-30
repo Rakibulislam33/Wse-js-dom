@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evenet Deleget</title>
+</head>
+<body>
+
+    <h2>Our js Event Delegate</h2>
+
+    <ul id="item-container">
+        <li class="item">Lorem Ipsum</li>
+        <li class="item">Our Event-2</li>
+        <li class="item">Our Event-3</li>
+        <li class="item">Our Event-4</li>
+        <li class="item">Our Event-5</li>
+    </ul>
+
+    <button id="add-item">Add Item</button>
+    
+
+
+    <script>
+
+
+
+
+const items = document.getElementsByClassName('item');
+console.log(items);
+for(item of items){
+    item.addEventListener('click', function(){
+        // document.getElementById('item-container').removeChild(item);
+        event.target.parentNode.removeChild(event.target);
+    });
+}
+
+
+
+
+
+        // document.getElementById('add-item').addEventListener('click',function(){
+
+        //     const li = document.createElement('li');
+        //     li.innerText = 'Our New Item';
+        //     li.classList.add('item');
+
+        //     const parent = document.getElementById('item-container');
+        //     parent.appendChild(li);
+
+          
+        // });
+
+        // const parent = document.getElementById('item-container').addEventListener('click', function(event){
+
+        //     event.target.parentNode.removeChild(event.target);
+
+        // });
+    </script>
+
+</body>
+</html>

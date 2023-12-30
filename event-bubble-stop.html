@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Bubbling Example with Stop</title>
+    <style>
+        div {
+            padding: 20px;
+            margin: 10px;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+
+<div id="outer">
+    <div id="middle">
+        <div id="inner">
+            Click me!
+        </div>
+    </div>
+</div>
+
+<script>
+    // Get the outer, middle, and inner div elements
+    var outer = document.getElementById('outer');
+    var middle = document.getElementById('middle');
+    var inner = document.getElementById('inner');
+
+    // Add click event listeners to each div
+    outer.addEventListener('click', function(event) {
+        console.log('Outer div clicked!');
+    });
+
+    middle.addEventListener('click', function(event) {
+        console.log('Middle div clicked!');
+        // Stop propagation to outer div
+        event.stopPropagation();
+    });
+
+    inner.addEventListener('click', function(event) {
+        console.log('Inner div clicked!');
+        // Stop propagation to both outer and middle div
+        event.stopPropagation();
+        // Stop further event handlers on this element
+        event.stopImmediatePropagation();
+    });
+</script>
+
+</body>
+</html>

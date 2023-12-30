@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Delegation Example</title>
+    <style>
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        li {
+            padding: 10px;
+            margin: 5px;
+            border: 1px solid black;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<ul id="parentList">
+    <li>Item 1</li>
+    <li>Item 2</li>
+    <li>Item 3</li>
+    <li>Item 4</li>
+</ul>
+
+<script>
+    // Get the parent ul element
+    var parentList = document.getElementById('parentList');
+
+    // Add a single click event listener to the parent ul
+    parentList.addEventListener('click', function(event) {
+        // Check if the clicked element is an li element
+        if (event.target.tagName === 'LI') {
+            // Log the text content of the clicked li element
+            console.log('Item clicked: ' + event.target.textContent);
+        }
+    });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Bubble</title>
+</head>
+<body>
+
+    <h2>Event Bubble </h2>
+    <section id="section-container">
+    <ul id="list-container">
+        <li class="item">Evvent Bubble -1</li>
+        <li id="second-item" class="item">Event Bubble -2</li>
+        <li class="item">Event Bubble 3</li>
+        <li class="item">Event bubble 4</li>
+        <li class="item">Event Bubble 5</li>
+    </ul>
+
+    
+    </section>
+
+    <script>
+
+
+        document.getElementById('second-item').addEventListener('click', function(event){
+
+            console.log('Second Item CLicked!');
+            // event.stopPropagation();
+            event.stopImmediatePropagation();
+        });
+
+        document.getElementById('second-item').addEventListener('click', function(event){
+            console.log('Second2 Item CLicked!');
+        });
+        
+
+        document.getElementById('second-item').addEventListener('click', function(event){
+            console.log('Second3 Item CLicked!');
+        });
+
+
+
+
+        //ul
+        document.getElementById('list-container').addEventListener('click', function(){
+            console.log('Ul  CLicked!');
+        });
+
+
+        //section
+        document.getElementById('section-container').addEventListener('click', function(){
+            console.log('Section  CLicked!');
+        });
+
+
+        
+    </script>
+    
+</body>
+</html>
