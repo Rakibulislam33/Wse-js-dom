@@ -30,4 +30,10 @@ Assignment Title: Explore Basic Javascript Event and make a practice project wit
 
 Class-5
 Javascript event 
-Assignment Title: practice what I have shown you in the class.
+Assignment Title: practice what I have shown you in class.
+
+
+Class-6
+Javascript Es6 
+Assignment Title: practice what I have shown you in class about Es6 and learn more by searching.
+
