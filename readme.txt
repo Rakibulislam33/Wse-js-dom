@@ -37,3 +37,8 @@ Class-6
 Javascript Es6 
 Assignment Title: practice what I have shown you in class about Es6 and learn more by searching.
 
+
+Class-7
+Javascript Es6 
+Assignment Title: practice what I have shown you in class about Es6 + Class and inheritance and learn more by searching the list about the oop checklist.
+
